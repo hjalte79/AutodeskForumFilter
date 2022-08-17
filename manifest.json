@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Autodesk forum filter",
+  "version": "1.0",
+
+  "description": "Add button to apply special filters to autodesk forum pages",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://forums.autodesk.com/t5/*"],
+      "js": ["AutodeskForumFilter.js"]
+    }
+  ]
+
+}

@@ -22,11 +22,8 @@ catch(err) {
 
 function ApplyFilter() {
 
-
-
 	const table = document.getElementsByClassName("thread-list")
 	for (let i = 0; i < table.length; i++) {
-		// table[i].style.backgroundColor = "green";
 
 		const rowsSolved = table[i].getElementsByClassName("lia-list-row-thread-solved") 
 		for (let i = 0; i < rowsSolved.length; i++) {
@@ -44,9 +41,7 @@ function ApplyFilter() {
 		for (let i = 0; i < rows.length; i++) {
 			try {
 
-				const row = rows[i];
-				// console.log(row.innerText);
-				
+				const row = rows[i];				
 				const userNames = row.getElementsByClassName("UserName");
 				
 				if (userNames.length == 1){
@@ -55,18 +50,8 @@ function ApplyFilter() {
 					
 					if (userNames[0].innerText.trim() === userNames[1].innerText.trim()) {
 						row.style.backgroundColor = "#ffffcc";
-					} else {
-						//row.style.backgroundColor = "#ffe6e6";
 					}
 				} 
-				/*
-				var newClickMe = document.createElement("span");
-				newClickMe.style.backgroundColor = "#000000";
-				newClickMe.style.color = "#FFFF00";
-				newClickMe.innerText = typeof userNames[0].innerText 
-
-				row.appendChild(newClickMe);
-				*/
 			}
 			catch(err) {
 				console.log(err.message);

@@ -2,7 +2,7 @@
 
   "manifest_version": 2,
   "name": "Autodesk forum filter",
-  "version": "1.0",
+  "version": "2.0",
 
   "description": "Add button to apply special filters to autodesk forum pages",
 

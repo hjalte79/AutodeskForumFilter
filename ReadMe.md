@@ -4,8 +4,9 @@ Click on: "Load Temporary Add-on..."
 select the "manifest.json" file from the extension directory
 
 # Installing
-In firefox goto: about:addons
+In firefox goto: about:addons [about:debugging#/runtime/this-firefox](about:debugging#/runtime/this-firefox)
 click on the "gear" icon in the upper-right area of the Add-on Manager.
+
 Select "Install Add-on from file..." from the menu.
 Find and select the file.
 
